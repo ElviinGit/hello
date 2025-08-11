@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+        
+    <h1>Radio Buttons</h1>
+    <form>
+        
+        <label><input type="radio" name="animal" value="Goat" id="goat_id">Goatie</label>
+        <label><input type="radio" name="animal" value="Dog" id="dog_id">Doggie</label>
+        <label><input type="radio" name="animal" value="Cat" id="cat_id">Pussy</label>
+        <label><input type="radio" name="animal" value="Capybara" id="capybara_id">Cappybara</label>
+        <label><input type="radio" name="animal" value="">None</label>
+
+
+    </form>
+<script>
+    document.querySelectorAll('input[name="animal"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+    console.log(`🐾 Browser selected: ${radio.value}`);
+    });
+  });
+</script>
+</body>
+</html>

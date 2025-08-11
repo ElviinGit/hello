@@ -34,6 +34,10 @@ app.post("/", async (req, res) => {
     }
 })
 
+app.get("/2", (req, res) =>{
+    res.render("hello2.ejs")
+})
+
 app.listen(port, () => {
     console.log(`Server running on the ${port}`)
 })
